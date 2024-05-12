@@ -42,9 +42,6 @@ public class MapperHandler extends Handler {
             case "/signin" -> {
                 invokerHandler = new InvokerHandler(userController::signin);
             }
-            case "/signout" -> {
-                invokerHandler = new InvokerHandler(userController::signout);
-            }
             case "/createBankAccount" -> {
                 invokerHandler = new InvokerHandler(bankAccountController::createBankAccount);
             }
