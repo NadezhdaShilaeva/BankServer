@@ -18,7 +18,6 @@ public class WriterHandler extends Handler {
     @Override
     public void handleQuery(Query query) {
         if (query instanceof Response<?> response) {
-            System.out.println(response.getBody());
             writeResponse(response);
         }
 

@@ -37,9 +37,6 @@ public class ReaderHandler extends Handler {
             }
 
             Request request = new Request(method, path, headers);
-            System.out.println(request.getMethod());
-            System.out.println(request.getPath());
-            System.out.println(request.getHeaders());
 
             if (headers.containsKey("Content-Type") && headers.get("Content-Type").equals("application/json")) {
                 int contentLength = Integer.parseInt(headers.get("Content-Length"));
@@ -47,8 +44,6 @@ public class ReaderHandler extends Handler {
                 char[] jsonBody = new char[contentLength];
                 reader.read(jsonBody, 0, contentLength);
                 request.setBody(new String(jsonBody));
-
-                System.out.println(request.getBody());
             }
 
             return request;

@@ -15,7 +15,6 @@ public class AuthHandler extends Handler {
 
     @Override
     public void handleQuery(Query query) {
-        System.out.println("Auth query");
         if (query instanceof Request request) {
             query = authenticateByToken(request);
         }
@@ -27,14 +26,12 @@ public class AuthHandler extends Handler {
 
     private Query authenticateByToken(Request request) {
         try {
-            System.out.println("authenticateByToken");
             String authorization = request.getHeaders().get("Authorization");
             if (authorization == null) {
                 return Response.notAuthorized("The authentication token was not provided");
             }
 
             String token = authorization.split("Bearer ", 2)[1];
-            System.out.println(token);
             String userLogin = tokenService.getUserFromToken(token);
             request.setPrincipal(new Principal(userLogin));
 

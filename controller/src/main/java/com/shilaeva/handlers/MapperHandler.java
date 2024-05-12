@@ -33,7 +33,6 @@ public class MapperHandler extends Handler {
 
     private Query resolveMethod(Request request) {
         InvokerHandler invokerHandler;
-        System.out.println(request.getMethod());
 
         switch (request.getMethod()) {
             case POST -> {
@@ -90,7 +89,6 @@ public class MapperHandler extends Handler {
                 this.setNextHandler(invokerHandler);
             }
             default -> {
-                System.out.println("Mapper auth");
                 AuthHandler authHandler = new AuthHandler(tokenService);
 
                 authHandler.setNextHandler(invokerHandler);

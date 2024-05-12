@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b0cbb03-da1c-4326-9aaa-c5f3343f1795" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/BankServer.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/BankServer.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/decorators/LoggingBankAccountServiceDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/decorators/LoggingUserServiceDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/logger/DateMessageFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/logger/FileLoggerProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/AuthHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/AuthHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/MapperHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/MapperHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/ReaderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/ReaderHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/WriterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/WriterHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +79,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -90,19 +99,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25747126&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.25747126",
+    "settings.editor.selected.configurable": "Console"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shilaeva.Main" />
