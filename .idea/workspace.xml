@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b0cbb03-da1c-4326-9aaa-c5f3343f1795" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/BankAccountControllerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/BankAccountControllerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/UserControllerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/UserControllerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/BankAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/BankAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/exceptions/AdapterException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/RequestMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/MapperHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/MapperHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Request.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +72,7 @@
         <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>

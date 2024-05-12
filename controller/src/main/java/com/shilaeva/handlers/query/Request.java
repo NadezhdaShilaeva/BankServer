@@ -3,19 +3,19 @@ package com.shilaeva.handlers.query;
 import java.util.Map;
 
 public class Request  implements Query {
-    private final String method;
+    private final RequestMethod method;
     private final String path;
     private final Map<String, String> headers;
     private String body;
     private Principal principal;
 
     public Request(String method, String path, Map<String, String> headers) {
-        this.method = method;
+        this.method = RequestMethod.valueOf(method);
         this.path = path;
         this.headers = headers;
     }
 
-    public String getMethod() {
+    public RequestMethod getMethod() {
         return method;
     }
 

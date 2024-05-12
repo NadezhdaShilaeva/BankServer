@@ -35,33 +35,52 @@ public class MapperHandler extends Handler {
         InvokerHandler invokerHandler;
         System.out.println(request.getMethod());
 
-        switch (request.getPath()) {
-            case "/signup" -> {
-                invokerHandler = new InvokerHandler(userController::signup);
+        switch (request.getMethod()) {
+            case POST -> {
+                switch (request.getPath()) {
+                    case "/signup" -> {
+                        invokerHandler = new InvokerHandler(userController::signup);
+                    }
+                    case "/signin" -> {
+                        invokerHandler = new InvokerHandler(userController::signin);
+                    }
+                    case "/createBankAccount" -> {
+                        invokerHandler = new InvokerHandler(bankAccountController::createBankAccount);
+                    }
+                    case "/money" -> {
+                        invokerHandler = new InvokerHandler(bankAccountController::transferMoneyBetweenBankAccounts);
+                    }
+                    default -> {
+                        return getNotFoundResponse(request);
+                    }
+                }
             }
-            case "/signin" -> {
-                invokerHandler = new InvokerHandler(userController::signin);
+            case GET -> {
+                switch (request.getPath()) {
+                    case "/money" -> {
+                        invokerHandler = new InvokerHandler(bankAccountController::getBankAccountBalance);
+                    }
+                    default -> {
+                        return getNotFoundResponse(request);
+                    }
+                }
+
             }
-            case "/createBankAccount" -> {
-                invokerHandler = new InvokerHandler(bankAccountController::createBankAccount);
-            }
-            case "/put" -> {
-                invokerHandler = new InvokerHandler(bankAccountController::putMoneyToTheBankAccount);
-            }
-            case "/withdraw" -> {
-                invokerHandler = new InvokerHandler(bankAccountController::withdrawMoneyFromTheBankAccount);
-            }
-            case "/money" -> {
-                System.out.println("Mapper /money");
-                if (request.getBody() == null) {
-                    invokerHandler = new InvokerHandler(bankAccountController::getBankAccountBalance);
-                } else {
-                    invokerHandler = new InvokerHandler(bankAccountController::transferMoneyBetweenBankAccounts);
+            case PATCH -> {
+                switch (request.getPath()) {
+                    case "/put" -> {
+                        invokerHandler = new InvokerHandler(bankAccountController::putMoneyToTheBankAccount);
+                    }
+                    case "/withdraw" -> {
+                        invokerHandler = new InvokerHandler(bankAccountController::withdrawMoneyFromTheBankAccount);
+                    }
+                    default -> {
+                        return getNotFoundResponse(request);
+                    }
                 }
             }
             default -> {
-                System.out.println("default");
-                return Response.notFound(String.format("Cannot %s %s", request.getMethod(), request.getPath()));
+                return getNotFoundResponse(request);
             }
         }
 
@@ -81,5 +100,9 @@ public class MapperHandler extends Handler {
         }
 
         return request;
+    }
+
+    private Response<?> getNotFoundResponse(Request request) {
+        return Response.notFound(String.format("Cannot %s %s", request.getMethod(), request.getPath()));
     }
 }

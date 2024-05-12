@@ -33,7 +33,7 @@ public class BankAccountController {
         try {
             BigDecimal balance = bankAccountService.getBankAccountBalance(userLogin);
 
-            return Response.ok(String.format("The current bank account balance is %.2f", balance));
+            return Response.ok(String.format("The current bank account balance is %.2f$", balance));
         } catch (BankAccountException e) {
             return Response.badRequest(e.getMessage());
         } catch (Exception e) {
