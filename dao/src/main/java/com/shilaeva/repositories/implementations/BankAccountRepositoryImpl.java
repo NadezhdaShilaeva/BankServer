@@ -17,7 +17,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             return bankAccountDao.getBankAccountById(id);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return null;
@@ -28,7 +28,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             return bankAccountDao.getBankAccountByUserId(userId);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return null;
@@ -39,7 +39,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             bankAccountDao.insertBankAccount(bankAccount);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -48,7 +48,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             bankAccountDao.updateBankAccount(bankAccount);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -57,7 +57,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             bankAccountDao.deleteBankAccount(id);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -65,7 +65,7 @@ public class BankAccountRepositoryImpl implements BankAccountRepository {
         try {
             bankAccountDao.createTable();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }

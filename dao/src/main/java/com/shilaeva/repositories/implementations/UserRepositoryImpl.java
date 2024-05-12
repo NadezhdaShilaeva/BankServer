@@ -17,7 +17,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             return userDao.getUserById(id);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return null;
@@ -28,7 +28,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             return userDao.getUserByLogin(login);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         return null;
@@ -39,7 +39,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             userDao.insertUser(user);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -48,7 +48,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             userDao.updateUser(user);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -57,7 +57,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             userDao.deleteUser(id);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -65,7 +65,7 @@ public class UserRepositoryImpl implements UserRepository {
         try {
             userDao.createTable();
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }

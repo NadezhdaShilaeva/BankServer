@@ -29,8 +29,8 @@ public class Main {
         System.out.println(myUser.getLogin());
         System.out.println(myUser.getPassword());
 
-        BankAccount bankAccount = new BankAccount(myUser.getId());
-        bankAccountRepository.create(bankAccount);
+        //BankAccount bankAccount = new BankAccount(myUser.getId());
+        //bankAccountRepository.create(bankAccount);
 
         BankAccount myBankAccount = bankAccountRepository.getByUserId(myUser.getId());
         System.out.println(myBankAccount.getId());
