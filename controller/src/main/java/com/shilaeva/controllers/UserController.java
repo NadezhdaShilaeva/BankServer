@@ -1,5 +1,7 @@
 package com.shilaeva.controllers;
 
+import com.shilaeva.exceptions.AuthException;
+import com.shilaeva.exceptions.UserException;
 import com.shilaeva.handlers.query.Response;
 import com.shilaeva.models.UserModel;
 import com.shilaeva.services.UserService;
@@ -11,34 +13,28 @@ public class UserController {
         this.userService = userService;
     }
 
-    public Response<String> signup(UserModel userModel) {
+    public Response<?> signup(UserModel userModel) {
         try {
             userService.register(userModel.login(), userModel.password());
 
             return Response.created(String.format("User with login %s has been successfully registered",
                     userModel.login()));
-        } catch (Exception e) {
+        } catch (UserException e) {
             return Response.badRequest(e.getMessage());
+        } catch (Exception e) {
+            return Response.internalServerError(e.getMessage());
         }
     }
 
-    public Response<String> signin(UserModel userModel) {
+    public Response<?> signin(UserModel userModel) {
         try {
             String token = userService.login(userModel.login(), userModel.password());
 
             return Response.ok(String.format("Token: %s", token));
-        } catch (Exception e) {
+        } catch (AuthException e) {
             return Response.badRequest(e.getMessage());
-        }
-    }
-
-    public Response<String> signout(String userLogin) {
-        try {
-            userService.logout(userLogin);
-
-            return Response.ok(String.format("User with login %s has successfully logged out", userLogin));
         } catch (Exception e) {
-            return Response.badRequest(e.getMessage());
+            return Response.internalServerError(e.getMessage());
         }
     }
 }

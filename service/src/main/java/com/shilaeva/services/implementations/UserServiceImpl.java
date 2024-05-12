@@ -38,6 +38,4 @@ public class UserServiceImpl implements UserService {
 
         return tokenService.generateToken(login);
     }
-
-    public void logout(String login) {}
 }

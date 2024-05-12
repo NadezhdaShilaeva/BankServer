@@ -5,47 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b0cbb03-da1c-4326-9aaa-c5f3343f1795" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/BankAccountControllerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/UserControllerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/BankAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/exceptions/AdapterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/exceptions/ReaderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/exceptions/WriterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/AuthHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/InvokerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/MapperHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/ReaderHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/WriterHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/handlers/query/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/models/MoneyModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/models/TransferMoneyModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/exceptions/AuthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/exceptions/BankAccountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/exceptions/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/sequrity/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/sequrity/implementations/TokenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/BankAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/BankAccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/repositories/implementations/BankAccountRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/repositories/implementations/BankAccountRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/repositories/implementations/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/shilaeva/repositories/implementations/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/BankAccountControllerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/BankAccountControllerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/UserControllerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/adapters/UserControllerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/BankAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/BankAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/shilaeva/exceptions/AdapterException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/shilaeva/services/implementations/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
