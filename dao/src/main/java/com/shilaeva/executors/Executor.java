@@ -2,6 +2,7 @@ package com.shilaeva.executors;
 
 import com.shilaeva.utils.ConnectionUtil;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -10,23 +11,19 @@ public class Executor {
 
     public Executor() {}
 
-    public void execUpdate(String update) throws SQLException {
-        Statement statement = ConnectionUtil.getConnection().createStatement();
-        statement.execute(update);
-        statement.close();
+    public void execUpdate(PreparedStatement preparedStatement) throws SQLException {
+        preparedStatement.executeUpdate();
+
+        preparedStatement.close();
     }
 
-    public <T> T execQuery(String query, ResultHandler<T> handler) throws SQLException {
-        Statement statement = ConnectionUtil.getConnection().createStatement();
-        statement.execute(query);
-
-        ResultSet result = statement.getResultSet();
+    public <T> T execQuery(PreparedStatement preparedStatement, ResultHandler<T> handler) throws SQLException {
+        ResultSet result = preparedStatement.executeQuery();
         T value = handler.handle(result);
 
         result.close();
-        statement.close();
+        preparedStatement.close();
 
         return value;
     }
-
 }
