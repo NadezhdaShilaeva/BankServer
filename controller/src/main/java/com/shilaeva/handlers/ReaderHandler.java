@@ -11,9 +11,11 @@ import java.util.Map;
 
 public class ReaderHandler extends Handler {
     private final BufferedReader reader;
+    private boolean isConnectionOpen;
 
     public ReaderHandler(BufferedReader reader) {
         this.reader = reader;
+        this.isConnectionOpen = true;
     }
 
     @Override
@@ -38,6 +40,10 @@ public class ReaderHandler extends Handler {
 
             Request request = new Request(method, path, headers);
 
+            if (headers.get("Connection").equalsIgnoreCase("close")) {
+                isConnectionOpen = false;
+            }
+
             if (headers.containsKey("Content-Type") && headers.get("Content-Type").equals("application/json")) {
                 int contentLength = Integer.parseInt(headers.get("Content-Length"));
 
@@ -50,5 +56,9 @@ public class ReaderHandler extends Handler {
         } catch (IOException e) {
             throw ReaderException.errorReadingResponse(e.getMessage());
         }
+    }
+
+    public boolean isConnectionOpen() {
+        return isConnectionOpen;
     }
 }
