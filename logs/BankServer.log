@@ -1,3 +1,16 @@
 2024-05-12T20:36:46.240Z: Start log message
 2024-05-12T20:37:33.874Z: User "NataliaShilaeva" was authenticated
 2024-05-12T20:37:47.432Z: User "NataliaShilaeva" balance is 40,00$
+2024-05-13T07:12:16.482Z: Start log message
+2024-05-13T07:16:54.669Z: User "IvanIvanov" was registered
+2024-05-13T07:18:12.651Z: User "IvanIvanov" was authenticated
+2024-05-13T07:20:17.200Z: User "IvanIvanov" created a bank account
+2024-05-13T07:20:23.140Z: User "IvanIvanov" balance is 0,00$
+2024-05-13T07:20:41.290Z: User "IvanIvanov" put 1000,00$
+2024-05-13T07:20:46.519Z: User "IvanIvanov" balance is 1000,00$
+2024-05-13T07:21:32.019Z: User "IvanIvanov" withdraw 100,00$
+2024-05-13T07:21:39.776Z: User "IvanIvanov" balance is 900,00$
+2024-05-13T07:22:06.870Z: User "IvanIvanov" was sent 500,00$ to the user "NataliaShilaeva"
+2024-05-13T07:22:12.810Z: User "IvanIvanov" balance is 400,00$
+2024-05-13T07:22:33.780Z: User "NataliaShilaeva" was authenticated
+2024-05-13T07:22:52.794Z: User "NataliaShilaeva" balance is 540,00$
